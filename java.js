@@ -1,8 +1,22 @@
-function coolButton(){
-  let button = 0
-  button ++
+let buttonCount = 0
 
-  if (button ==1){
-    document.getElementById("helloWorld").classList.add.("hidden")
+
+function coolButton(){
+  
+  buttonCount ++;
+  if (buttonCount == 1){
+    document.getElementById("helloWorld").classList.add("hidden")
+  }
+  else if (buttonCount == 2){
+    document.getElementById("coolSubtitle").classList.add("hidden")
+  }
+  else if (buttonCount == 3){
+    document.getElementById("likeSports").classList.remove("hidden")
+  }
+  else if (buttonCount == 4){
+    document.getElementById("likeVideoGames").classList.remove("hidden")
+  }
+  else{
+    document.getElementById("likeBoardGames").classList.remove("hidden")
   }
 }
